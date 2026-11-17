@@ -580,6 +580,11 @@ main, .site-footer { margin-left: var(--nav-w); }
 .footer-name { font-family: var(--f-poster); text-transform: uppercase; font-size: 2rem; margin: 0; color: var(--white); line-height: 1.1; }
 .footer-meta { margin: .3rem 0 .5rem; font-size: .85rem; color: var(--blue-hi); letter-spacing: .06em; }
 .footer-small { margin: 0; color: var(--silver); font-size: 1rem; }
+.site-credit { background: #08090a; border-bottom: 3px solid var(--blue-hi); }
+.site-credit-inner { display: flex; align-items: center; gap: .9rem; padding: .7rem 1.5rem .7rem 3.5rem; }
+.site-credit-inner .claude-logo { width: 44px; height: 44px; flex: none; background: none; }
+.site-credit-inner p { margin: 0; color: var(--white); font-size: 1.05rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+.site-credit-inner .mono { color: var(--blue-hi); font-size: .8rem; font-weight: 400; margin-left: .4rem; }
 
 /* ---------------------------------------------------------
    Responsive
@@ -626,3 +631,6 @@ main, .site-footer { margin-left: var(--nav-w); }
   .pin { width: 28px; height: 28px; font-size: .8rem; }
   .timing-status { margin-left: 0; }
 }
+
+
+[hidden] { display: none !important; }

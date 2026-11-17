@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gibbs Racing Company | Team 12 | ECE 5 Fall 2026</title>
   <meta name="description" content="Gibbs Racing Company, Team 12 in ECE 5 at UC San Diego, Fall 2026. Our line-following robot build, PID tuning, and race results.">
-  <link rel="icon" href="assets/gibbs-racing-company-logo.webp" type="image/webp">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -20,22 +20,28 @@
      ===================================================================== -->
 <nav class="tower-nav" aria-label="Sections">
   <a class="tower-head" href="#top">
-    <span class="tower-roundel">12</span>
     <span class="tower-title">GRC<br><small>TIMING</small></span>
   </a>
   <ol>
     <li><a href="#top"><span class="pos">01</span><span class="lbl">Team</span></a></li>
-    <li><a href="#build"><span class="pos">02</span><span class="lbl">The Build</span></a></li>
-    <li><a href="#car"><span class="pos">03</span><span class="lbl">The Car</span></a></li>
-    <li><a href="#pid"><span class="pos">04</span><span class="lbl">PID Control</span></a></li>
-    <li><a href="#results"><span class="pos">05</span><span class="lbl">Race Results</span></a></li>
-    <li><a href="#video"><span class="pos">06</span><span class="lbl">Video</span></a></li>
-    <li><a href="#team-photo"><span class="pos">07</span><span class="lbl">Team Photo</span></a></li>
-    <li><a href="#debrief"><span class="pos">08</span><span class="lbl">Debrief</span></a></li>
+    <li hidden><a href="#build"><span class="pos">02</span><span class="lbl">The Build</span></a></li>
+    <li hidden><a href="#car"><span class="pos">03</span><span class="lbl">The Car</span></a></li>
+    <li hidden><a href="#pid"><span class="pos">04</span><span class="lbl">PID Control</span></a></li>
+    <li hidden><a href="#results"><span class="pos">05</span><span class="lbl">Race Results</span></a></li>
+    <li hidden><a href="#video"><span class="pos">06</span><span class="lbl">Video</span></a></li>
+    <li hidden><a href="#team-photo"><span class="pos">07</span><span class="lbl">Team Photo</span></a></li>
+    <li hidden><a href="#debrief"><span class="pos">08</span><span class="lbl">Debrief</span></a></li>
   </ol>
 </nav>
 
 <main>
+
+<div class="site-credit">
+  <div class="site-credit-inner">
+    <img class="claude-logo" src="assets/Claude_AI_symbol.svg.webp" alt="Claude logo" width="44" height="44">
+    <p>Website built by Claude <span class="mono">&middot; Team 12 &middot; ECE 5 Fall 2026</span></p>
+  </div>
+</div>
 
 <!-- =====================================================================
      1. HERO
@@ -55,7 +61,6 @@
       </h1>
 
       <div class="team-badge">
-        <span class="roundel roundel-lg">12</span>
         <div>
           <p class="team-no">Team 12</p>
           <p class="team-sub mono">ENTRY #12 &middot; CLASS: ECE 5 LINE-FOLLOWER</p>
@@ -64,7 +69,7 @@
 
       <!-- Team member names (Lab 4 checklist: list every team member).
            The roundels show initials; update them if a name changes. -->
-      <h2 class="crew-label">The Drivers</h2>
+      <h2 class="crew-label">The Team</h2>
       <ul class="crew">
         <li><span class="roundel roundel-sm">RS</span><span class="crew-name">Ryan Shen</span></li>
         <li><span class="roundel roundel-sm">TL</span><span class="crew-name">Tristan Lee</span></li>
@@ -74,7 +79,7 @@
 
       <p class="fun-fact">
         <span class="ff-tag mono">FUN FACT</span>
-        Named after Jahmyr Gibbs, the Lions running back. Our robot is also small, quick, and very hard to keep on a line it doesn't like. That's also why everything here is Honolulu blue.
+        Named after Jahmyr Gibbs, the Detroit Lions running back. Our robot is also small, quick, and very hard to beat. That's also why everything here is Honolulu blue.
       </p>
     </div>
 
@@ -97,7 +102,7 @@
      2. THE BUILD
      Lab 4 checklist: robot building section, prototyping parts and assembly.
      ===================================================================== -->
-<section id="build" class="section">
+<section hidden id="build" class="section">
   <header class="pitboard">
     <span class="pb-num mono">SEC 02</span>
     <h2 class="pb-title">The Build</h2>
@@ -155,7 +160,7 @@
       <figcaption>
         <span class="cap-tag mono">LAP 04 &middot; SHAKEDOWN</span>
         <!-- PLACEHOLDER [Req 2] Caption for photo 04. -->
-        <span class="tbd">Caption: first time it followed the line on its own (or didn't).</span>
+        <span class="tbd">Caption: first time it followed the line on its own.</span>
       </figcaption>
     </figure>
 
@@ -168,7 +173,7 @@
      3. THE CAR
      Lab 4 checklist: photo(s) of the final competition robot, with parts labeled.
      ===================================================================== -->
-<section id="car" class="section">
+<section hidden id="car" class="section">
   <header class="pitboard">
     <span class="pb-num mono">SEC 03</span>
     <h2 class="pb-title">The Car</h2>
@@ -234,7 +239,7 @@
      Lab 4 checklist: explain PID, the values chosen and why, and how
      Speed PID was adjusted for each track.
      ===================================================================== -->
-<section id="pid" class="section">
+<section hidden id="pid" class="section">
   <header class="pitboard">
     <span class="pb-num mono">SEC 04</span>
     <h2 class="pb-title">PID Control</h2>
@@ -334,7 +339,7 @@
      5. RACE RESULTS
      Lab 4 checklist: competition results for each event.
      ===================================================================== -->
-<section id="results" class="section">
+<section hidden id="results" class="section">
   <header class="pitboard">
     <span class="pb-num mono">SEC 05</span>
     <h2 class="pb-title">Race Results</h2>
@@ -400,7 +405,7 @@
      6. COMPETITION VIDEO
      Lab 4 checklist: at least one video of the robot competing on a track.
      ===================================================================== -->
-<section id="video" class="section">
+<section hidden id="video" class="section">
   <header class="pitboard">
     <span class="pb-num mono">SEC 06</span>
     <h2 class="pb-title">Competition Video</h2>
@@ -433,7 +438,7 @@
      7. TEAM PHOTO
      Lab 4 checklist: team photo with every member in it.
      ===================================================================== -->
-<section id="team-photo" class="section section-wide">
+<section hidden id="team-photo" class="section section-wide">
   <header class="pitboard">
     <span class="pb-num mono">SEC 07</span>
     <h2 class="pb-title">Team Photo</h2>
@@ -460,7 +465,7 @@
      Lab 4 checklist: 4–6 sentences on improvements made in the final
      week and improvements you'd make with more time.
      ===================================================================== -->
-<section id="debrief" class="section">
+<section hidden id="debrief" class="section">
   <header class="pitboard">
     <span class="pb-num mono">SEC 08</span>
     <h2 class="pb-title">The Debrief</h2>
@@ -501,8 +506,7 @@
     <div>
       <p class="footer-name">Gibbs Racing Company</p>
       <p class="footer-meta mono">TEAM 12 &middot; ECE 5 — Fall 2026 &middot; UC San Diego</p>
-      <p class="footer-small">Built by students who think a line-follower counts as motorsport. <a href="#top">Back to the start line ↑</a></p>
-    </div>
+      <p class="footer-small">Website built by Claude. <a href="#top">Back to the start line ↑</a></p>    </div>
   </div>
 </footer>
 
