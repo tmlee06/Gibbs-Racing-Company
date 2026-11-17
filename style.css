@@ -239,7 +239,7 @@ main, .site-footer { margin-left: var(--nav-w); }
 .hero {
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
+  min-height: 0;
   display: flex; flex-direction: column;
   background:
     radial-gradient(ellipse at 75% 40%, rgba(0,118,182,.28), transparent 60%),
@@ -580,11 +580,21 @@ main, .site-footer { margin-left: var(--nav-w); }
 .footer-name { font-family: var(--f-poster); text-transform: uppercase; font-size: 2rem; margin: 0; color: var(--white); line-height: 1.1; }
 .footer-meta { margin: .3rem 0 .5rem; font-size: .85rem; color: var(--blue-hi); letter-spacing: .06em; }
 .footer-small { margin: 0; color: var(--silver); font-size: 1rem; }
-.site-credit { background: #08090a; border-bottom: 3px solid var(--blue-hi); }
-.site-credit-inner { display: flex; align-items: center; gap: .9rem; padding: .7rem 1.5rem .7rem 3.5rem; }
-.site-credit-inner .claude-logo { width: 44px; height: 44px; flex: none; background: none; }
-.site-credit-inner p { margin: 0; color: var(--white); font-size: 1.05rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
-.site-credit-inner .mono { color: var(--blue-hi); font-size: .8rem; font-weight: 400; margin-left: .4rem; }
+.site-credit {
+  background: linear-gradient(90deg, #0b0d10, #12161b 60%, #0b0d10);
+  border-bottom: 1px solid var(--line);
+  box-shadow: inset 0 -2px 0 rgba(217,119,87,.55);
+}
+.site-credit-inner {
+  display: flex; align-items: center; justify-content: center; flex-wrap: wrap;
+  gap: .55rem .9rem; padding: .6rem 1.25rem;
+  font-family: var(--f-body); text-transform: uppercase; letter-spacing: .12em; font-size: .95rem;
+}
+.site-credit-inner .claude-logo { width: 28px; height: 28px; flex: none; object-fit: contain; background: none; }
+.credit-main { color: var(--silver-hi); font-weight: 500; }
+.credit-main strong { color: #d97757; font-weight: 700; }
+.credit-sep { width: 1px; height: 1.1em; background: var(--line); }
+.credit-meta { color: var(--silver); font-size: .85rem; }
 
 /* ---------------------------------------------------------
    Responsive
