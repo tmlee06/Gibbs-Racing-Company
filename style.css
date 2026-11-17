@@ -634,3 +634,8 @@ main, .site-footer { margin-left: var(--nav-w); }
 
 
 [hidden] { display: none !important; }
+
+.robot-section { text-align: center; }
+.robot-photo { margin: 0 auto; max-width: 420px; }
+.robot-photo img { width: 100%; height: auto; display: block; border-radius: 10px; border: 3px solid var(--blue); }
+.robot-photo figcaption { margin-top: .7rem; color: var(--silver); font-size: 1rem; }
