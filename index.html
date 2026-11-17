@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gibbs Racing Company | Team 12 | ECE 5 Fall 2026</title>
+  <meta name="description" content="Gibbs Racing Company, Team 12 in ECE 5 at UC San Diego, Fall 2026. Our line-following robot build, PID tuning, and race results.">
+  <link rel="icon" href="assets/gibbs-racing-company-logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =====================================================================
+     TIMING TOWER NAV
+     Fixed on the left on wide screens, a sticky strip on phones.
+     Every required section is linked here so a grader can jump straight to it.
+     ===================================================================== -->
+<nav class="tower-nav" aria-label="Sections">
+  <a class="tower-head" href="#top">
+    <span class="tower-roundel">12</span>
+    <span class="tower-title">GRC<br><small>TIMING</small></span>
+  </a>
+  <ol>
+    <li><a href="#top"><span class="pos">01</span><span class="lbl">Team</span></a></li>
+    <li><a href="#build"><span class="pos">02</span><span class="lbl">The Build</span></a></li>
+    <li><a href="#car"><span class="pos">03</span><span class="lbl">The Car</span></a></li>
+    <li><a href="#pid"><span class="pos">04</span><span class="lbl">PID Control</span></a></li>
+    <li><a href="#results"><span class="pos">05</span><span class="lbl">Race Results</span></a></li>
+    <li><a href="#video"><span class="pos">06</span><span class="lbl">Video</span></a></li>
+    <li><a href="#team-photo"><span class="pos">07</span><span class="lbl">Team Photo</span></a></li>
+    <li><a href="#debrief"><span class="pos">08</span><span class="lbl">Debrief</span></a></li>
+  </ol>
+</nav>
+
+<main>
+
+<!-- =====================================================================
+     1. HERO
+     Lab 4 checklist: team name, team number, member names, class info, logo.
+     ===================================================================== -->
+<section id="top" class="hero">
+  <div class="hero-stripes" aria-hidden="true"></div>
+
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="kicker">ECE 5 &middot; UC San Diego &middot; Prof. Karcher Morris &middot; Fall 2026</p>
+
+      <h1>
+        <span class="h1-line">Gibbs</span>
+        <span class="h1-line">Racing</span>
+        <span class="h1-line h1-blue">Company</span>
+      </h1>
+
+      <div class="team-badge">
+        <span class="roundel roundel-lg">12</span>
+        <div>
+          <p class="team-no">Team 12</p>
+          <p class="team-sub mono">ENTRY #12 &middot; CLASS: ECE 5 LINE-FOLLOWER</p>
+        </div>
+      </div>
+
+      <!-- Team member names (Lab 4 checklist: list every team member).
+           The roundels show initials; update them if a name changes. -->
+      <h2 class="crew-label">The Drivers</h2>
+      <ul class="crew">
+        <li><span class="roundel roundel-sm">RS</span><span class="crew-name">Ryan Shen</span></li>
+        <li><span class="roundel roundel-sm">TL</span><span class="crew-name">Tristan Lee</span></li>
+        <li><span class="roundel roundel-sm">DN</span><span class="crew-name">Dylan Nguyen</span></li>
+        <li><span class="roundel roundel-sm">EA</span><span class="crew-name">Emron Arsala</span></li>
+      </ul>
+
+      <p class="fun-fact">
+        <span class="ff-tag mono">FUN FACT</span>
+        Named after Jahmyr Gibbs, the Lions running back. Our robot is also small, quick, and very hard to keep on a line it doesn't like. That's also why everything here is Honolulu blue.
+      </p>
+    </div>
+
+    <div class="hero-art">
+      <!-- F1 start lights. Click to run the start again. -->
+      <button class="start-lights" type="button" aria-label="Replay start lights">
+        <span class="light"></span><span class="light"></span><span class="light"></span><span class="light"></span><span class="light"></span>
+      </button>
+      <p class="lights-msg mono" aria-live="polite">&nbsp;</p>
+
+      <img class="hero-logo" src="assets/gibbs-racing-company-logo.webp" alt="Gibbs Racing Company logo: our robot car, number 12, inside a blue roundel" width="1600" height="1600">
+    </div>
+  </div>
+
+  <div class="checker" aria-hidden="true"></div>
+</section>
+
+
+<!-- =====================================================================
+     2. THE BUILD
+     Lab 4 checklist: robot building section, prototyping parts and assembly.
+     ===================================================================== -->
+<section id="build" class="section">
+  <header class="pitboard">
+    <span class="pb-num mono">SEC 02</span>
+    <h2 class="pb-title">The Build</h2>
+    <span class="pb-sub">Prototyping &amp; assembly</span>
+  </header>
+
+  <p class="lede">
+    How a bag of parts turned into car #12. Breadboard first, chassis second, a lot of re-seated jumper wires third.
+  </p>
+
+  <div class="build-grid">
+
+    <figure class="card">
+      <!-- PLACEHOLDER [Req 2: The Build / prototyping]
+           Photo of early prototyping, e.g. breadboard circuit with the ESP32 and sensors before mounting.
+           Replace the whole <div class="ph"> with:
+           <img src="images/build-01.jpg" alt="Breadboard prototype with ESP32 and line sensors">  -->
+      <div class="ph" data-label="BUILD PHOTO 01"></div>
+      <figcaption>
+        <span class="cap-tag mono">LAP 01 &middot; PROTOTYPE</span>
+        <!-- PLACEHOLDER [Req 2] 1–2 sentence caption for photo 01. -->
+        <span class="tbd">Caption: what we were testing on the breadboard and what we learned from it.</span>
+      </figcaption>
+    </figure>
+
+    <figure class="card">
+      <!-- PLACEHOLDER [Req 2: The Build / assembly]
+           Photo of chassis assembly, e.g. motors and wheels going onto the base plate.
+           Replace with: <img src="images/build-02.jpg" alt="Mounting motors and wheels on the chassis">  -->
+      <div class="ph" data-label="BUILD PHOTO 02"></div>
+      <figcaption>
+        <span class="cap-tag mono">LAP 02 &middot; CHASSIS</span>
+        <!-- PLACEHOLDER [Req 2] Caption for photo 02. -->
+        <span class="tbd">Caption: putting the chassis, motors and wheels together.</span>
+      </figcaption>
+    </figure>
+
+    <figure class="card">
+      <!-- PLACEHOLDER [Req 2: The Build / assembly]
+           Photo of wiring: sensors, motor driver and ESP32 connected on the car.
+           Replace with: <img src="images/build-03.jpg" alt="Wiring the line sensors and motor driver">  -->
+      <div class="ph" data-label="BUILD PHOTO 03"></div>
+      <figcaption>
+        <span class="cap-tag mono">LAP 03 &middot; WIRING</span>
+        <!-- PLACEHOLDER [Req 2] Caption for photo 03. -->
+        <span class="tbd">Caption: wiring the line sensors and motor driver to the ESP32.</span>
+      </figcaption>
+    </figure>
+
+    <figure class="card">
+      <!-- PLACEHOLDER [Req 2: The Build / testing]
+           Photo of the first test run on a practice track (or a failed one, those are funnier).
+           Replace with: <img src="images/build-04.jpg" alt="First test run on the practice track">  -->
+      <div class="ph" data-label="BUILD PHOTO 04"></div>
+      <figcaption>
+        <span class="cap-tag mono">LAP 04 &middot; SHAKEDOWN</span>
+        <!-- PLACEHOLDER [Req 2] Caption for photo 04. -->
+        <span class="tbd">Caption: first time it followed the line on its own (or didn't).</span>
+      </figcaption>
+    </figure>
+
+  </div>
+  <!-- Need more build photos? Copy any <figure class="card"> block above. The grid wraps automatically. -->
+</section>
+
+
+<!-- =====================================================================
+     3. THE CAR
+     Lab 4 checklist: photo(s) of the final competition robot, with parts labeled.
+     ===================================================================== -->
+<section id="car" class="section">
+  <header class="pitboard">
+    <span class="pb-num mono">SEC 03</span>
+    <h2 class="pb-title">The Car</h2>
+    <span class="pb-sub">Final competition robot</span>
+  </header>
+
+  <p class="lede">Car #12 as it ran on competition day. Hover a number (or a part in the list) to find it on the car.</p>
+
+  <div class="annotated">
+    <div class="diagram" id="diagram">
+      <!-- PLACEHOLDER [Req 3: The Car / annotated photo]
+           Side or 3/4 photo of the FINAL competition robot. Replace the <div class="ph"> below with:
+           <img src="images/car-annotated.jpg" alt="Final competition robot, car 12, side view">
+           Keep the pins after it.
+
+           MOVING THE PINS: open the page with ?pins on the end of the URL
+           (e.g. index.html?pins). Drag each number onto the right part, then copy the
+           --x / --y values from the yellow box into the style="" of each pin below. -->
+      <div class="ph ph-car" data-label="FINAL CAR PHOTO"></div>
+
+      <!-- Pin positions are % from the top-left of the photo. Edit --x and --y. -->
+      <button class="pin" type="button" data-pin="1" style="--x:48%; --y:68%;">1</button>
+      <button class="pin" type="button" data-pin="2" style="--x:40%; --y:32%;">2</button>
+      <button class="pin" type="button" data-pin="3" style="--x:68%; --y:40%;">3</button>
+      <button class="pin" type="button" data-pin="4" style="--x:90%; --y:82%;">4</button>
+      <button class="pin" type="button" data-pin="5" style="--x:20%; --y:74%;">5</button>
+      <button class="pin" type="button" data-pin="6" style="--x:80%; --y:88%;">6</button>
+      <button class="pin" type="button" data-pin="7" style="--x:60%; --y:56%;">7</button>
+
+      <pre class="pin-readout mono" hidden></pre>
+    </div>
+
+    <ol class="legend">
+      <!-- PLACEHOLDER [Req 3] Optional: swap the short descriptions for specifics (part numbers, what you changed). -->
+      <li data-pin="1"><span class="legend-no">1</span><div><strong>Chassis</strong><span>The base plate everything bolts to.</span></div></li>
+      <li data-pin="2"><span class="legend-no">2</span><div><strong>ESP32</strong><span>The brain. Reads the sensors, runs PID, drives the motors.</span></div></li>
+      <li data-pin="3"><span class="legend-no">3</span><div><strong>Motor driver</strong><span>Turns ESP32 signals into actual motor power.</span></div></li>
+      <li data-pin="4"><span class="legend-no">4</span><div><strong>Line sensors</strong><span>Look down at the track and report where the line is.</span></div></li>
+      <li data-pin="5"><span class="legend-no">5</span><div><strong>Wheels</strong><span>Two driven wheels. Steering comes from running them at different speeds.</span></div></li>
+      <li data-pin="6"><span class="legend-no">6</span><div><strong>Caster</strong><span>The little swivel wheel that keeps the car level.</span></div></li>
+      <li data-pin="7"><span class="legend-no">7</span><div><strong>Battery</strong><span>Power for the whole car.</span></div></li>
+    </ol>
+  </div>
+
+  <div class="car-extra">
+    <figure class="card">
+      <!-- PLACEHOLDER [Req 3: The Car / extra angle]
+           Second photo of the final robot from another angle (top-down works well).
+           Replace with: <img src="images/car-top.jpg" alt="Final competition robot, top view">  -->
+      <div class="ph" data-label="CAR PHOTO 02 · TOP VIEW"></div>
+      <figcaption>
+        <span class="cap-tag mono">ANGLE 02</span>
+        <!-- PLACEHOLDER [Req 3] Caption for the second car photo. -->
+        <span class="tbd">Caption: top view of the final car.</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     4. PID CONTROL
+     Lab 4 checklist: explain PID, the values chosen and why, and how
+     Speed PID was adjusted for each track.
+     ===================================================================== -->
+<section id="pid" class="section">
+  <header class="pitboard">
+    <span class="pb-num mono">SEC 04</span>
+    <h2 class="pb-title">PID Control</h2>
+    <span class="pb-sub">How the car stays on the line</span>
+  </header>
+
+  <div class="pid-explain">
+    <p>
+      The line sensors tell the car how far off-center it is. That number is the <strong>error</strong>. PID is a recipe for turning the error into a steering correction, built from three parts that each look at the error differently.
+    </p>
+    <div class="pid-terms">
+      <div class="term">
+        <span class="term-letter">P</span>
+        <h3>Proportional</h3>
+        <p>Looks at <em>right now</em>. Far off the line means steer hard, slightly off means steer a little. Too much P and the car zig-zags.</p>
+      </div>
+      <div class="term">
+        <span class="term-letter">I</span>
+        <h3>Integral</h3>
+        <p>Looks at <em>the past</em>. If the car keeps drifting to one side, the small errors pile up and I pushes back. Too much and it overshoots.</p>
+      </div>
+      <div class="term">
+        <span class="term-letter">D</span>
+        <h3>Derivative</h3>
+        <p>Looks at <em>where it's heading</em>. If the error is shrinking fast, D eases off so the car doesn't swing past the line. It calms the wobble.</p>
+      </div>
+    </div>
+    <p class="formula mono">correction = Kp&middot;e + Ki&middot;&int;e dt + Kd&middot;de/dt</p>
+  </div>
+
+  <h3 class="sub-head">Our setup</h3>
+  <div class="pid-values">
+    <table class="setup-table">
+      <thead>
+        <tr><th>Gain</th><th>Value</th><th>What it did for us</th></tr>
+      </thead>
+      <tbody>
+        <!-- PLACEHOLDER [Req 4: PID values chosen] Fill in the final Kp, Ki, Kd. -->
+        <tr><td class="mono gain">Kp</td><td class="mono"><span class="tbd">0.00</span></td><td><span class="tbd">One line on what P did on our car.</span></td></tr>
+        <tr><td class="mono gain">Ki</td><td class="mono"><span class="tbd">0.00</span></td><td><span class="tbd">One line on what I did on our car.</span></td></tr>
+        <tr><td class="mono gain">Kd</td><td class="mono"><span class="tbd">0.00</span></td><td><span class="tbd">One line on what D did on our car.</span></td></tr>
+      </tbody>
+    </table>
+
+    <div class="why">
+      <h4>Why we chose them</h4>
+      <!-- PLACEHOLDER [Req 4: why we chose these values]
+           A short paragraph: how you tuned (e.g. raised P until it oscillated, then added D), what you saw on track. -->
+      <p class="tbd">
+        Paragraph on how we tuned: where we started, what went wrong, what we changed, and why we stopped at these numbers.
+      </p>
+    </div>
+  </div>
+
+  <h3 class="sub-head">Speed PID, track by track</h3>
+  <div class="track-grid">
+    <article class="track-card">
+      <header><span class="roundel roundel-xs">D</span><h4>Drag Race</h4></header>
+      <!-- PLACEHOLDER [Req 4: Speed PID adjustment for Drag Race]
+           What you changed for a straight sprint (base speed, gains) and why. -->
+      <p class="tbd">How we set Speed PID for the straight: base speed, any gain changes, and the reason.</p>
+      <dl class="mono mini-gains">
+        <!-- PLACEHOLDER [Req 4] Drag Race speed settings. Delete rows you didn't change. -->
+        <div><dt>Base speed</dt><dd><span class="tbd">---</span></dd></div>
+        <div><dt>Kp / Ki / Kd</dt><dd><span class="tbd">- / - / -</span></dd></div>
+      </dl>
+    </article>
+
+    <article class="track-card">
+      <header><span class="roundel roundel-xs">F</span><h4>Freq Sweep</h4></header>
+      <!-- PLACEHOLDER [Req 4: Speed PID adjustment for Freq Sweep]
+           What you changed for the curves that get tighter and tighter, and why. -->
+      <p class="tbd">How we set Speed PID for the sweep, where the turns keep tightening.</p>
+      <dl class="mono mini-gains">
+        <!-- PLACEHOLDER [Req 4] Freq Sweep speed settings. -->
+        <div><dt>Base speed</dt><dd><span class="tbd">---</span></dd></div>
+        <div><dt>Kp / Ki / Kd</dt><dd><span class="tbd">- / - / -</span></dd></div>
+      </dl>
+    </article>
+
+    <article class="track-card">
+      <header><span class="roundel roundel-xs">L</span><h4>Loop</h4></header>
+      <!-- PLACEHOLDER [Req 4: Speed PID adjustment for Loop]
+           What you changed to run as many clean loops as possible, and why. -->
+      <p class="tbd">How we set Speed PID for the loop track, trading speed against staying on the line.</p>
+      <dl class="mono mini-gains">
+        <!-- PLACEHOLDER [Req 4] Loop speed settings. -->
+        <div><dt>Base speed</dt><dd><span class="tbd">---</span></dd></div>
+        <div><dt>Kp / Ki / Kd</dt><dd><span class="tbd">- / - / -</span></dd></div>
+      </dl>
+    </article>
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     5. RACE RESULTS
+     Lab 4 checklist: competition results for each event.
+     ===================================================================== -->
+<section id="results" class="section">
+  <header class="pitboard">
+    <span class="pb-num mono">SEC 05</span>
+    <h2 class="pb-title">Race Results</h2>
+    <span class="pb-sub">Competition day timing sheet</span>
+  </header>
+
+  <div class="timing">
+    <div class="timing-bar mono">
+      <span class="live-dot" aria-hidden="true"></span>
+      <span>ECE 5 GRAND PRIX</span>
+      <!-- PLACEHOLDER [Req 5] Competition date, e.g. 2026-12-04. -->
+      <span class="timing-date"><span class="tbd">DATE TBD</span></span>
+      <!-- PLACEHOLDER [Req 5] Change to FINAL once results are in. -->
+      <span class="timing-status">STATUS: <span class="tbd">AWAITING GREEN FLAG</span></span>
+    </div>
+
+    <div class="table-wrap">
+      <table class="tower-table mono">
+        <thead>
+          <tr>
+            <th scope="col">Rank</th>
+            <th scope="col">Event</th>
+            <th scope="col">Distance</th>
+            <th scope="col">Loops</th>
+            <th scope="col">Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- PLACEHOLDER [Req 5: Drag Race] Fill in time (seconds) and rank. -->
+          <tr>
+            <td><span class="rank tbd">P--</span></td>
+            <th scope="row"><span class="ev-stripe"></span>Drag Race</th>
+            <td class="na">n/a</td>
+            <td class="na">n/a</td>
+            <td><span class="tbd">--.---s</span></td>
+          </tr>
+          <!-- PLACEHOLDER [Req 5: Freq Sweep] Fill in distance, time, and rank. -->
+          <tr>
+            <td><span class="rank tbd">P--</span></td>
+            <th scope="row"><span class="ev-stripe"></span>Freq Sweep</th>
+            <td><span class="tbd">---- cm</span></td>
+            <td class="na">n/a</td>
+            <td><span class="tbd">--.---s</span></td>
+          </tr>
+          <!-- PLACEHOLDER [Req 5: Loop] Fill in number of loops and rank. -->
+          <tr>
+            <td><span class="rank tbd">P--</span></td>
+            <th scope="row"><span class="ev-stripe"></span>Loop</th>
+            <td class="na">n/a</td>
+            <td><span class="tbd">--</span></td>
+            <td class="na">n/a</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- PLACEHOLDER [Req 5] Optional: a line on how many teams raced, so the ranks have context. -->
+    <p class="timing-note mono"><span class="tbd">Ranks out of -- teams.</span></p>
+  </div>
+</section>
+
+
+<!-- =====================================================================
+     6. COMPETITION VIDEO
+     Lab 4 checklist: at least one video of the robot competing on a track.
+     ===================================================================== -->
+<section id="video" class="section">
+  <header class="pitboard">
+    <span class="pb-num mono">SEC 06</span>
+    <h2 class="pb-title">Competition Video</h2>
+    <span class="pb-sub">Car #12 on track</span>
+  </header>
+
+  <div class="video-frame">
+    <!-- PLACEHOLDER [Req 6: competition video, required]
+         Replace the <div class="ph"> with ONE of these:
+
+         Option A, YouTube (set the video to Unlisted so it embeds):
+         <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+                 title="Gibbs Racing Company car 12 competing on the Loop track"
+                 allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                 allowfullscreen></iframe>
+
+         Option B, a file in this folder (keep it under ~50 MB so free hosts accept it):
+         <video src="images/race.mp4" controls playsinline preload="metadata"></video>  -->
+    <div class="ph ph-video" data-label="▶ COMPETITION VIDEO"></div>
+  </div>
+  <p class="video-cap">
+    <!-- PLACEHOLDER [Req 6] Which track/event the video shows. -->
+    <span class="tbd">Caption: which event this is and anything worth watching for.</span>
+  </p>
+  <!-- Got more than one run on video? Copy the .video-frame block and its caption. -->
+</section>
+
+
+<!-- =====================================================================
+     7. TEAM PHOTO
+     Lab 4 checklist: team photo with every member in it.
+     ===================================================================== -->
+<section id="team-photo" class="section section-wide">
+  <header class="pitboard">
+    <span class="pb-num mono">SEC 07</span>
+    <h2 class="pb-title">Team Photo</h2>
+    <span class="pb-sub">The whole crew</span>
+  </header>
+
+  <figure class="team-photo">
+    <!-- PLACEHOLDER [Req 7: team photo, every member must be in it]
+         Full-width photo from competition day with Ryan, Tristan, Dylan, and Emron (and the car, ideally).
+         Replace with: <img src="images/team.jpg" alt="Team 12: Ryan Shen, Tristan Lee, Dylan Nguyen, and Emron Arsala with car 12">  -->
+    <div class="ph ph-team" data-label="TEAM PHOTO · COMPETITION DAY"></div>
+    <figcaption>
+      <span class="mono cap-tag">FULL GRID</span>
+      Team 12, all four of us: Ryan Shen, Tristan Lee, Dylan Nguyen, and Emron Arsala.
+      <!-- PLACEHOLDER [Req 7] Change to "Left to right: ..." once you know the order in the photo. -->
+      <span class="tbd">Left to right: ---.</span>
+    </figcaption>
+  </figure>
+</section>
+
+
+<!-- =====================================================================
+     8. THE DEBRIEF
+     Lab 4 checklist: 4–6 sentences on improvements made in the final
+     week and improvements you'd make with more time.
+     ===================================================================== -->
+<section id="debrief" class="section">
+  <header class="pitboard">
+    <span class="pb-num mono">SEC 08</span>
+    <h2 class="pb-title">The Debrief</h2>
+    <span class="pb-sub">Improvements made &amp; improvements next</span>
+  </header>
+
+  <div class="debrief-grid">
+    <div class="debrief-col">
+      <h3><span class="mono flag-chip">FINAL WEEK</span> What we improved</h3>
+      <!-- PLACEHOLDER [Req 8: improvements made in the final week]
+           2–3 sentences. Together with the column on the right, 4–6 sentences total. -->
+      <p class="tbd">
+        Sentence on the biggest fix we made in the last week. Sentence on what it changed on track. Optional third sentence.
+      </p>
+    </div>
+    <div class="debrief-col">
+      <h3><span class="mono flag-chip flag-chip-blue">MORE TIME</span> What we'd do next</h3>
+      <!-- PLACEHOLDER [Req 8: improvements with more time]
+           2–3 sentences on what you'd change with another week or two. -->
+      <p class="tbd">
+        Sentence on the first thing we'd change with more time. Sentence on why. Optional third sentence.
+      </p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<!-- =====================================================================
+     9. FOOTER
+     Team name, number, logo, course line.
+     ===================================================================== -->
+<footer class="site-footer">
+  <div class="checker" aria-hidden="true"></div>
+  <div class="footer-inner">
+    <img src="assets/gibbs-racing-company-logo.webp" alt="Gibbs Racing Company logo" width="120" height="120" loading="lazy">
+    <div>
+      <p class="footer-name">Gibbs Racing Company</p>
+      <p class="footer-meta mono">TEAM 12 &middot; ECE 5 — Fall 2026 &middot; UC San Diego</p>
+      <p class="footer-small">Built by students who think a line-follower counts as motorsport. <a href="#top">Back to the start line ↑</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
