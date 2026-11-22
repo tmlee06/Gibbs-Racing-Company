@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -28,7 +28,7 @@
     <li hidden><a href="#car"><span class="pos">03</span><span class="lbl">The Car</span></a></li>
     <li hidden><a href="#pid"><span class="pos">04</span><span class="lbl">PID Control</span></a></li>
     <li hidden><a href="#results"><span class="pos">05</span><span class="lbl">Race Results</span></a></li>
-    <li hidden><a href="#video"><span class="pos">06</span><span class="lbl">Video</span></a></li>
+    <li><a href="#video"><span class="pos">06</span><span class="lbl">Video</span></a></li>
     <li hidden><a href="#team-photo"><span class="pos">07</span><span class="lbl">Team Photo</span></a></li>
     <li hidden><a href="#debrief"><span class="pos">08</span><span class="lbl">Debrief</span></a></li>
   </ol>
@@ -419,7 +419,7 @@
      6. COMPETITION VIDEO
      Lab 4 checklist: at least one video of the robot competing on a track.
      ===================================================================== -->
-<section hidden id="video" class="section">
+<section id="video" class="section">
   <header class="pitboard">
     <span class="pb-num mono">SEC 06</span>
     <h2 class="pb-title">Competition Video</h2>
@@ -427,22 +427,12 @@
   </header>
 
   <div class="video-frame">
-    <!-- PLACEHOLDER [Req 6: competition video, required]
-         Replace the <div class="ph"> with ONE of these:
-
-         Option A, YouTube (set the video to Unlisted so it embeds):
-         <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
-                 title="Gibbs Racing Company car 12 competing on the Loop track"
-                 allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
-                 allowfullscreen></iframe>
-
-         Option B, a file in this folder (keep it under ~50 MB so free hosts accept it):
-         <video src="images/race.mp4" controls playsinline preload="metadata"></video>  -->
-    <div class="ph ph-video" data-label="▶ COMPETITION VIDEO"></div>
+    <iframe src="https://drive.google.com/file/d/1176iZFfL8xGNEy33NjPJY7WtMWz426HW/preview"
+            title="Gibbs Racing Company car 12 line-following run"
+            allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
   </div>
   <p class="video-cap">
-    <!-- PLACEHOLDER [Req 6] Which track/event the video shows. -->
-    <span class="tbd">Caption: which event this is and anything worth watching for.</span>
+    Team 12 line-following run.
   </p>
   <!-- Got more than one run on video? Copy the .video-frame block and its caption. -->
 </section>
